@@ -53,7 +53,7 @@ $(document).ready(function() {
     $("#current-roll").empty();
     $("#current-roll").append(roll);
     $("#current-roll").hide();
-    $("#current-roll").fadeIn("slow");
+    $("#current-roll").fadeIn();
   }); 
   
 
