@@ -1,7 +1,6 @@
 RULES DISPLAY
 P1  |  P2
     |
-#   |  #
 sum | sum
 
 [Roll][Hide]
@@ -36,8 +35,8 @@ Functions:
   Variable: 
   - score - starts at 0
   - rolledNumber - added to score
-  
 
+Need to refactor how the data is added in to the Score fields - currently right now, it will only append BECAUSE the "names" are P1 and P2.
 
 optional : Make two sides, grey out one side button when not turn
  ** Ask for player name and display it as player label
@@ -54,7 +53,7 @@ optional : Make two sides, grey out one side button when not turn
  Expect: addToPlayerScore(4).toEqual(4);
 
  Describe: turnEnd();
- Test 3: "It will change player number to 1 or 2 depending on current player number."
- Expect: turnEnd(1).toEqual(2);
+ Test 3: "It will switch players at the end of the turn."
+ Expect: turnEnd(player1).toEqual(player2);
 
  Describe: buttonHold
