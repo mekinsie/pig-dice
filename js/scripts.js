@@ -33,15 +33,24 @@ $(document).ready(function() {
   $("button#roll").click(function() {
     const roll = (randomNumber(6) + 1);
     if (roll === 1) {
-      console.log( currentPlayer.name + " rolled " + roll);
+      console.log(currentPlayer.name + " rolled " + roll);
       currentPlayer = turnEnd(currentPlayer);
       console.log("It is " + currentPlayer.name + "'s turn");
     }
     else {
-      addToPlayerScore(currentPlayer, roll);
-      console.log(currentPlayer.name + " rolled " + roll);
-      $("#" + currentPlayer.name + "-score").empty();
-      $("#" + currentPlayer.name + "-score").append(currentPlayer.score);
+      if (currentPlayer === player1)
+      {
+        addToPlayerScore(currentPlayer, roll);
+        console.log(currentPlayer.name + " rolled " + roll);
+        $("#p1-score").empty();
+        $("#p1-score").append(currentPlayer.score);
+      }
+      else {
+        addToPlayerScore(currentPlayer, roll);
+        console.log(currentPlayer.name + " rolled " + roll);
+        $("#p2-score").empty();
+        $("#p2-score").append(currentPlayer.score);
+      }
     }
     $("#current-roll").empty();
     $("#current-roll").append(roll);
