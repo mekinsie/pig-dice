@@ -22,19 +22,26 @@ function addToPlayerScore(player, roll) {
 }
 
 
+
 $(document).ready(function() {
-  
   player1 = new Player();
   player2 = new Player();
+  let currentPlayer = 1;
+  
+  $("button#hold").click(function() {
+    // HOLD BUTTON
+  });
+
   $("button#roll").click(function() {
-    let currentPlayer = 1;
     const roll = (randomNumber(6) + 1);
     if (roll === 1) {
-      turnEnd();
+      console.log("Player " + currentPlayer + " rolled " + roll);
+      currentPlayer = turnEnd(currentPlayer);
+      console.log("It is Player " + currentPlayer + "'s turn");
     }
     else {
       addToPlayerScore(currentPlayer, roll);
-      console.log(roll);
+      console.log("Player " + currentPlayer + " rolled " + roll);
     }
     $("#current-roll").empty();
     $("#current-roll").append(roll);
