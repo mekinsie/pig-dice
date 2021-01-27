@@ -1,4 +1,4 @@
-# _TEMPLATE_
+# _Pig Dice_
 
 #### _Website to <PURPOSE>_
 
@@ -18,6 +18,10 @@ _The purpose of this website is to <DETAILED PURPOSE>_
 ## Support and contact details
 
 _Discord: @KirbyPaint#0751_
+<br>
+Reach Mekinsie: via <a href="https://www.linkedin.com/in/mekinsie/" target="_blank">Linkedin</a> or <a href="mailto:mekinsie.aja@gmail.com" target="_blank">email</a></li>.
+
+Checkout Mekinsie's <a href="https://github.com/mekinsie" target="_blank">github</a>.
 
 ## Technologies Used
 

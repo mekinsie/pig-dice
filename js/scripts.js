@@ -3,6 +3,9 @@ function randomNumber(max) {
 }
 
 $(document).ready(function() {
-  const randomNumber = randomNumber(6);
-
+  $("button#roll").click(function() {
+    const roll = (randomNumber(6) + 1);
+    $("#current-roll").append(roll);
+    console.log(roll);
+  });
 });
