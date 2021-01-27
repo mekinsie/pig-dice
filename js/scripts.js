@@ -23,8 +23,8 @@ function addToPlayerScore(player, roll) {
 }
 
 $(document).ready(function() {
-  user1 = "player 1";
-  user2 = "player 2";
+  user1 = "p1";
+  user2 = "p2";
   player1 = new Player(user1);
   player2 = new Player(user2);
   let currentPlayer = player1;
@@ -40,6 +40,8 @@ $(document).ready(function() {
     else {
       addToPlayerScore(currentPlayer, roll);
       console.log(currentPlayer.name + " rolled " + roll);
+      $("#" + currentPlayer.name + "-score").empty();
+      $("#" + currentPlayer.name + "-score").append(currentPlayer.score);
     }
     $("#current-roll").empty();
     $("#current-roll").append(roll);
