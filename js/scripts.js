@@ -16,26 +16,27 @@ function Player() {
   this.score = 0;
 }
 
-Player.prototype.addToPlayerScore = function(roll) {
-  this.score += roll;
-  return this.score;
+function addToPlayerScore(player, roll) {
+  player.score += roll;
+  return player.score;
 }
 
-player1 = new Player();
-player2 = new Player();
 
 $(document).ready(function() {
+  
+  player1 = new Player();
+  player2 = new Player();
   $("button#roll").click(function() {
-    let currentPlayer=1;
+    let currentPlayer = 1;
     const roll = (randomNumber(6) + 1);
     if (roll === 1) {
       turnEnd();
     }
     else {
-      addToPlayerScore(player);
+      addToPlayerScore(currentPlayer, roll);
+      console.log(roll);
     }
     $("#current-roll").empty();
     $("#current-roll").append(roll);
-    console.log(roll);
   });
 });
