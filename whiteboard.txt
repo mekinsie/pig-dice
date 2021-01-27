@@ -1,0 +1,44 @@
+RULES DISPLAY
+P1  |  P2
+    |
+[R] |  [R]
+[H] |  [H]
+#   |  #
+sum | sum
+
+Play button - refresh to new
+Hide/show Pig Dice - hit play to show the buttons, show the scoring areas
+
+
+Objects:
+
+Player 1:
+? Rolled value:
+Score-person1:
+
+Player 2"
+? Rolled value:
+Score-person2:
+
+Die 
+sides: [1,2,3,4,5,6]
+
+Functions: 
+  - Random number Function
+  - Sum function (adds newest number to score) old number (variable) += new number
+    - if output number = 1, set old number variable to 0, end turn
+  - Check if score => 100 (if statement?) --> end game
+- Trigger HOLD button
+- Constructor function - person (sum)
+
+--> triggered by ROLL button
+
+  Variable: 
+  - score - starts at 0
+  - rolledNumber - added to score
+  
+
+
+
+ ** Ask for player name and display it as player label
+ ** Rules section
