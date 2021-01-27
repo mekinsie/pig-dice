@@ -45,13 +45,15 @@ $(document).ready(function() {
       console.log("It is " + currentPlayer.name + "'s turn");
       currentRoundScore = 0;
       $("#current-player").empty();
-        $("#current-player").append(currentPlayer.name);
+      $("#current-player").append(currentPlayer.name);
     }
     else {
       currentRoundScore += roll;
     }
     $("#current-roll").empty();
     $("#current-roll").append(roll);
+    $("#current-roll").hide();
+    $("#current-roll").fadeIn("slow");
   }); 
   
 
