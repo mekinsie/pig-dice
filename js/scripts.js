@@ -33,6 +33,9 @@ $(document).ready(function() {
   player2 = new Player(user2);
   let currentPlayer = player1;
   let currentRoundScore = 0;
+
+  $("#current-player").empty();
+  $("#current-player").append(currentPlayer.name);
   
   $("button#roll").click(function() {
     const roll = (randomNumber(6) + 1);
@@ -41,27 +44,23 @@ $(document).ready(function() {
       currentPlayer = turnEnd(currentPlayer);
       console.log("It is " + currentPlayer.name + "'s turn");
       currentRoundScore = 0;
+      $("#current-player").empty();
+        $("#current-player").append(currentPlayer.name);
     }
     else {
       currentRoundScore += roll;
-      if (currentPlayer === player1)
-      {
-        console.log(currentPlayer.name + " rolled " + roll);
-      }
-      else {
-        console.log(currentPlayer.name + " rolled " + roll);
-      }
     }
     $("#current-roll").empty();
     $("#current-roll").append(roll);
   }); 
   
 
-  
+
   $("button#hold").click(function() {
     if (currentPlayer === player1)
     {
       addToPlayerScore(currentPlayer, currentRoundScore);
+      $("#current-roll").empty();
       $("#p1-score").empty();
       $("#p1-score").append(currentPlayer.score);
       console.log(currentRoundScore);
@@ -69,6 +68,7 @@ $(document).ready(function() {
     }
     else {
       addToPlayerScore(currentPlayer, currentRoundScore);
+      $("#current-roll").empty();
       $("#p2-score").empty();
       $("#p2-score").append(currentPlayer.score);
       console.log(currentRoundScore);
@@ -76,5 +76,7 @@ $(document).ready(function() {
     }
     currentPlayer = turnEnd(currentPlayer);
     console.log("It is " + currentPlayer.name + "'s turn");
+    $("#current-player").empty();
+    $("#current-player").append(currentPlayer.name);
   });
 });
