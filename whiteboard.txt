@@ -1,10 +1,10 @@
 RULES DISPLAY
 P1  |  P2
     |
-[R] |  [R]
-[H] |  [H]
 #   |  #
 sum | sum
+
+[Roll][Hide]
 
 Play button - refresh to new
 Hide/show Pig Dice - hit play to show the buttons, show the scoring areas
@@ -39,6 +39,16 @@ Functions:
   
 
 
-
+optional : Make two sides, grey out one side button when not turn
  ** Ask for player name and display it as player label
  ** Rules section
+
+ Specs:
+
+ Describe: randomNumber();
+ Test: "It will output a random number between 1 and 6."
+ Expect: randomNumber().toEqual(4);
+
+ Describe: addToPlayerScore();
+ Test: "It will add rolled number to a specific player's score." 
+ Expect: addToPlayerScore(4).toEqual(4);

@@ -7,11 +7,11 @@
 
 ## Description
 
-_Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":_<br>
-* _If the player rolls a 1, they score nothing and it becomes the next player's turn._<br>
-* _If the player rolls any other number, it is added to their turn total and the player's turn continues._<br>
-* _If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn._<br><br>
-_The first player to score 100 or more points wins._
+Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":<br>
+* If the player rolls a 1, they score nothing and it becomes the next player's turn.<br>
+* If the player rolls any other number, it is added to their turn total and the player's turn continues.<br>
+* If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.<br><br>
+The first player to score 100 or more points wins.
 
 ## Setup/Installation Requirements
 
@@ -22,23 +22,23 @@ _Choose your preferred way to Install:_
 ### Using Git cloning (Most complete option):
 * Open Git or your preferred terminal
 * Navigate to your directory for Git projects (not within an existing project)
-* Type the following: git clone https://github.com/KirbyPaint/EC-W3-independent-project.git
+* Type the following: git clone https://github.com/KirbyPaint/EC-W4-pig-dice
 
 ### Download the project as a ZIP folder:
-* Navigate to the project's page here: https://github.com/KirbyPaint/EC-W3-independent-project
+* Navigate to the project's page here: https://github.com/KirbyPaint/EC-W4-pig-dice
 * Look for the green  ![code button](img/code.png?raw=true "code button")  button
 * Click the button and you will see a drop-down menu. Look for the "Download ZIP" button
 * Save your download locally and extract the files to a directory of your choice
 * Double-click the file named "index.html" to view the page
 
 ### View the project in your browser (Most convenient option):
-* Navigate to this link to view in your browser: https://kirbypaint.github.io/EC-W3-independent-project/
+* Navigate to this link to view in your browser: https://kirbypaint.github.io/EC-W4-pig-dice/
 
 ## Known Bugs
-
+No known bugs
 ## Support and contact details
 
-_Discord: @KirbyPaint#0751_
+Discord: @KirbyPaint#0751
 <br>
 Reach Mekinsie: via <a href="https://www.linkedin.com/in/mekinsie/" target="_blank">Linkedin</a> or <a href="mailto:mekinsie.aja@gmail.com" target="_blank">email</a></li>.
 
@@ -52,4 +52,4 @@ _HTML, CSS (Bootstrap), JavaScript (jQuery)_
 
 _GNU Public License_
 
-Copyright (c) 2021 **_KirbyPaint_**
+Copyright (c) 2021 **_KirbyPaint & Mekinsie Callahan_**
