@@ -46,13 +46,15 @@ optional : Make two sides, grey out one side button when not turn
  Specs:
 
  Describe: randomNumber();
- Test: "It will output a random number between 1 and 6."
+ Test 1: "It will output a random number between 1 and 6."
  Expect: randomNumber().toEqual(4);
 
  Describe: addToPlayerScore();
- Test: "It will add rolled number to a specific player's score." 
+ Test 2: "It will add rolled number to a specific player's score." 
  Expect: addToPlayerScore(4).toEqual(4);
 
  Describe: turnEnd();
- Test: "It will change player number to 1 or 2 depending on current player number."
+ Test 3: "It will change player number to 1 or 2 depending on current player number."
  Expect: turnEnd(1).toEqual(2);
+
+ Describe: buttonHold

@@ -3,17 +3,18 @@ function randomNumber(max) {
 }
 
 function turnEnd(currentPlayer) {
-  if (currentPlayer === 1) {
-    currentPlayer = 2;
+  if (currentPlayer === player1) {
+    currentPlayer = player2;
   }
   else {
-    currentPlayer = 1;
+    currentPlayer = player1;
   }
   return currentPlayer;
 }
 
-function Player() {
+function Player(name) {
   this.score = 0;
+  this.name = name;
 }
 
 function addToPlayerScore(player, roll) {
@@ -21,12 +22,12 @@ function addToPlayerScore(player, roll) {
   return player.score;
 }
 
-
-
 $(document).ready(function() {
-  player1 = new Player();
-  player2 = new Player();
-  let currentPlayer = 1;
+  user1 = "player 1";
+  user2 = "player 2";
+  player1 = new Player(user1);
+  player2 = new Player(user2);
+  let currentPlayer = player1;
   
   $("button#hold").click(function() {
     // HOLD BUTTON
@@ -35,15 +36,15 @@ $(document).ready(function() {
   $("button#roll").click(function() {
     const roll = (randomNumber(6) + 1);
     if (roll === 1) {
-      console.log("Player " + currentPlayer + " rolled " + roll);
+      console.log( currentPlayer.name + " rolled " + roll);
       currentPlayer = turnEnd(currentPlayer);
-      console.log("It is Player " + currentPlayer + "'s turn");
+      console.log("It is " + currentPlayer.name + "'s turn");
     }
     else {
       addToPlayerScore(currentPlayer, roll);
-      console.log("Player " + currentPlayer + " rolled " + roll);
+      console.log(currentPlayer.name + " rolled " + roll);
     }
     $("#current-roll").empty();
     $("#current-roll").append(roll);
-  });
+  }); 
 });
