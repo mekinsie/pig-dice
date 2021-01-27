@@ -29,11 +29,7 @@ $(document).ready(function() {
   player2 = new Player(user2);
   let currentPlayer = player1;
   
-  $("button#hold").click(function() {
-    currentPlayer = turnEnd(currentPlayer);
-    console.log("It is " + currentPlayer.name + "'s turn");
-  });
-
+  
   $("button#roll").click(function() {
     const roll = (randomNumber(6) + 1);
     if (roll === 1) {
@@ -48,4 +44,9 @@ $(document).ready(function() {
     $("#current-roll").empty();
     $("#current-roll").append(roll);
   }); 
+  
+  $("button#hold").click(function() {
+    currentPlayer = turnEnd(currentPlayer);
+    console.log("It is " + currentPlayer.name + "'s turn");
+  });
 });
