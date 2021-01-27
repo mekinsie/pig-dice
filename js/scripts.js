@@ -1,3 +1,8 @@
+function Player(name) {
+  this.score = 0;
+  this.name = name;
+}
+
 function randomNumber(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
@@ -10,11 +15,6 @@ function turnEnd(currentPlayer) {
     currentPlayer = player1;
   }
   return currentPlayer;
-}
-
-function Player(name) {
-  this.score = 0;
-  this.name = name;
 }
 
 function addToPlayerScore(player, roll) {
@@ -30,7 +30,8 @@ $(document).ready(function() {
   let currentPlayer = player1;
   
   $("button#hold").click(function() {
-    // HOLD BUTTON
+    currentPlayer = turnEnd(currentPlayer);
+    console.log("It is " + currentPlayer.name + "'s turn");
   });
 
   $("button#roll").click(function() {
