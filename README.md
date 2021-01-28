@@ -49,7 +49,9 @@ _Choose your preferred way to Install:_
 * Navigate to this link to view in your browser: https://kirbypaint.github.io/EC-W4-pig-dice/
 
 ## Known Bugs
-No known bugs
+
+Page content does not resize with window size.
+
 ## Support and contact details
 
 Discord: @KirbyPaint#0751
