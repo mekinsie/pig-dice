@@ -24,7 +24,7 @@ function addToPlayerScore(player, currentRoundScore) {
 }
 
 //User Interface Logic
-$(document).ready(function() {
+$(document).ready(function() { 
   user1 = "p1";
   user2 = "p2";
   player1 = new Player(user1);
@@ -97,5 +97,8 @@ $(document).ready(function() {
     currentPlayer = turnEnd(currentPlayer);
     $("#current-player").empty();
     $("#current-player").append(currentPlayer.name);
+  });
+  $("button#rule-button").click(function() {
+    $(".rules").slideToggle();
   });
 });

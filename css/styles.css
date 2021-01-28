@@ -34,30 +34,45 @@ button:active {
   border-style: ridge groove groove ridge;
   border-radius: 10px;
 }
+.rules-button-styling {
+  position: absolute;
+  bottom: 2%;
+  left: 2%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 0px 0px,
+  4px 4px 2px 2px rgba(104, 104, 104, 0.247);
+}
+.rules-button-styling:active {
+  position: absolute;
+  bottom: 2%;
+  left: 2%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 0px 0px rgba(119, 74, 74),
+  2px 2px 2px 2px rgba(104, 104, 104, 0.100);
+}
+
 h1 {
   position: fixed;
   top: 30px;
   left: 30px;
   font-size: 50px;
 }
-
 .rules {
   background-color: rgb(255, 219, 210);
   position: fixed;
-  bottom:40px;
-  left: 50px;
-  font-size: 20px;
-  /* just added below */
+  bottom:20px;
+  left: 120px;
   border: 7px solid;
   border-radius: 15px;
   border-style: groove ridge ridge groove;
   border-color:rgb(189, 117, 117);
   padding: 20px;
   box-shadow: 15px 10px 10px 5px;
+  display:none;
 }
 .box {
   margin: auto;
-  margin-top: 100px;
+  margin-top: 10px;
   text-align: center;
   font-size: 35px;
   padding-top: 20px;
@@ -86,9 +101,23 @@ h1 {
 }
 .box4 {
   position: fixed;
-  top: 35%;
+  top: 45%;
   left: 50%;
-  transform: translate(-50%, -80%);
+  transform: translate(-50%, -67%);
+}
+.box5 {
+  margin: auto;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 40px;
+}
+.box6 {
+  margin: auto;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 20px;
 }
 .row-buttons{
   margin: auto;
@@ -96,19 +125,16 @@ h1 {
   position: fixed;
   margin-left:30%;
 }
-
 #current-roll {
   font-size: 35px;
 }
-
 .pig-image-bottom {
   position: fixed;
   bottom:75px;
   right: 60px;
   font-size: 20px;
-  width: 300px;
+  width: 15%;
 }
-
 .pig-image-header-left {
   width: 100px;
   float: left;
