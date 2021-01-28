@@ -10,7 +10,7 @@
 <body>
   <div class="container">
     <div class="row">
-      <p>Pig Dice!</p>
+      <h1>Pig Dice!</h1>
     </div>
     <div class="row">
       <div class="col-6">
@@ -29,6 +29,14 @@
     <p>Current Player: <span id="current-player"></span></p>
     <p>Current round score is: <span id="current-round-score"></span></p>
     <p>Die roll: <div id="current-roll"></div></p>
+    <div class="Rules">
+      <h3>Rules</h3>
+      Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":<br>
+  * If the player rolls a 1, they score nothing and it becomes the next player's turn.<br>
+  * If the player rolls any other number, it is added to their turn total and the player's turn continues.<br>
+  * If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.<br><br>
+  The first player to score 100 or more points wins.
+    </div>  
   </div>
 </body>
 </html>
