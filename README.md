@@ -12,6 +12,20 @@ Each turn, a player repeatedly rolls a die until either a 1 is rolled or the pla
 * If the player rolls any other number, it is added to their turn total and the player's turn continues.<br>
 * If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.<br><br>
 The first player to score 100 or more points wins.
+## Specs:
+```
+ Describe: randomNumber();
+ Test 1: "It will output a random number between 1 and 6."
+ Expect: randomNumber().toEqual(4);
+
+ Describe: addToPlayerScore();
+ Test 2: "It will add rolled number to a specific player's score." 
+ Expect: addToPlayerScore(4).toEqual(4);
+
+ Describe: turnEnd();
+ Test 3: "It will switch players at the end of the turn."
+ Expect: turnEnd(player1).toEqual(player2);
+```
 
 ## Setup/Installation Requirements
 

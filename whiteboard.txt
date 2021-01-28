@@ -55,5 +55,3 @@ optional : Make two sides, grey out one side button when not turn
  Describe: turnEnd();
  Test 3: "It will switch players at the end of the turn."
  Expect: turnEnd(player1).toEqual(player2);
-
- Describe: buttonHold

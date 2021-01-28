@@ -55,7 +55,6 @@ $(document).ready(function() {
       $("#current-roll").empty();
       $("#current-roll").append(roll);
       }
-
     if (roll === 1) {
       currentPlayer = turnEnd(currentPlayer);
       currentRoundScore = 0;
@@ -73,7 +72,6 @@ $(document).ready(function() {
     $("#current-roll").append(roll);
     $("#current-roll").hide();
     $("#current-roll").fadeIn();
-      
   }); 
   
   $("button#hold").click(function() {
