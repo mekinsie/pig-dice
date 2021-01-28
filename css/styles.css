@@ -11,14 +11,28 @@ html, body {
   color: rgb(189, 117, 117);
   font-family: 'Bangers', cursive;
 }
-
-button:focus {
-  outline:none;
-}
 button {
-  background-color: transparent;
+  color:rgb(255, 219, 210);
+  background-color:rgb(189, 117, 117);
+  border: 5px solid rgb(189, 117, 117);
+  border-style: groove ridge ridge groove;
   border-radius: 10px;
+}
+button:focus {
+  outline: 0;
+}
+button:hover {
+  color: rgb(189, 117, 117);
+  background-color:rgb(255, 219, 210);
+  border: 5px solid rgb(189, 117, 117);
+  border-style: groove ridge ridge groove;
+  border-radius: 10px;
+}
+button:active {
   outline:none;
+  border: 5px solid rgb(255, 219, 210);
+  border-style: ridge groove groove ridge;
+  border-radius: 10px;
 }
 h1 {
   position: fixed;
@@ -28,51 +42,76 @@ h1 {
 }
 
 .rules {
+  background-color: rgb(255, 219, 210);
   position: fixed;
-  bottom:50px;
-  left: 70px;
+  bottom:40px;
+  left: 50px;
   font-size: 20px;
+  /* just added below */
+  border: 7px solid;
+  border-radius: 15px;
+  border-style: groove ridge ridge groove;
+  border-color:rgb(189, 117, 117);
+  padding: 20px;
+  box-shadow: 15px 10px 10px 5px;
 }
 .box {
   margin: auto;
   margin-top: 100px;
   text-align: center;
-  font-size: 25px;
+  font-size: 35px;
   padding-top: 20px;
 }
 .box2 {
   margin: auto;
   margin-right:0px;
   padding: 50px;
-  font-size: 25px;
+  font-size: 35px;
   text-align: center;
-  border:solid;
-  border-radius: 10px 0px 0px 10px;
+  border: 5px solid rgb(189, 117, 117);
+  border-radius: 15px;
+  border-style: groove ridge ridge groove;
+  background-color: rgb(255, 219, 210);
 }
 .box3 {
   margin:auto;
-  margin-left:0px;
+  margin-left:12px;
   padding: 50px;
-  font-size: 25px;
+  font-size: 35px;
   text-align: center;
-  border:solid;
-  border-left: none;
-  border-radius: 0px 10px 10px 0px;
+  border: 5px solid rgb(189, 117, 117);
+  border-radius: 15px;
+  border-style: groove ridge ridge groove;
+  background-color: rgb(255, 219, 210);
 }
 .box4 {
   position: fixed;
-  top: 40%;
+  top: 35%;
   left: 50%;
-  transform: translate(-50%, -70%);
+  transform: translate(-50%, -80%);
 }
 .row-buttons{
   margin: auto;
   size: 100px;
+  position: fixed;
+  margin-left:30%;
 }
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
-  /* border: 3px solid green; */
+
+#current-roll {
+  font-size: 35px;
+}
+
+.pig-image-bottom {
+  position: fixed;
+  bottom:75px;
+  right: 60px;
+  font-size: 20px;
+  width: 300px;
+}
+
+.pig-image-header-left {
+  width: 100px;
+  float: left;
+  margin-left: 200px;
+  margin-top: 20px;
 }
