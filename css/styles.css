@@ -149,3 +149,10 @@ a {
 a:hover {
   color:rgb(102, 58, 58);
 }
+
+#new {
+  margin: auto;
+  text-align: center;
+  font-size: 30px;
+  line-height: 40px;
+}
