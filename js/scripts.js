@@ -23,8 +23,6 @@ function addToPlayerScore(player, currentRoundScore) {
   return player.score;
 }
 
-
-
 //User Interface Logic
 $(document).ready(function() {
   user1 = "p1";
@@ -34,11 +32,30 @@ $(document).ready(function() {
   let currentPlayer = player1;
   let currentRoundScore = 0;
 
+  $("#p1-score").append(currentPlayer.score);
+  $("#p2-score").append(currentPlayer.score);
+  
   $("#current-player").empty();
   $("#current-player").append(currentPlayer.name);
   
   $("button#roll").click(function() {
-    const roll = (randomNumber(6) + 1);
+    let roll = (randomNumber(6) + 1);
+    if ((currentPlayer.score + currentRoundScore + roll) >= 100) {
+      alert("GAME OVER " + currentPlayer.name + " wins!");
+      player1.score = 0;
+      player2.score = 0;
+      currentRoundScore = 0;
+      roll = 0;
+      $("#p1-score").empty();
+      $("#p1-score").append(currentPlayer.score);
+      $("#p2-score").empty();
+      $("#p2-score").append(currentPlayer.score);
+      $("#current-round-score").empty();
+      $("#current-round-score").append(currentRoundScore);
+      $("#current-roll").empty();
+      $("#current-roll").append(roll);
+      }
+
     if (roll === 1) {
       currentPlayer = turnEnd(currentPlayer);
       currentRoundScore = 0;
@@ -56,10 +73,9 @@ $(document).ready(function() {
     $("#current-roll").append(roll);
     $("#current-roll").hide();
     $("#current-roll").fadeIn();
+      
   }); 
   
-
-
   $("button#hold").click(function() {
     if (currentPlayer === player1)
     {
@@ -81,7 +97,6 @@ $(document).ready(function() {
       $("#current-round-score").append(currentRoundScore);
     }
     currentPlayer = turnEnd(currentPlayer);
-    console.log("It is " + currentPlayer.name + "'s turn");
     $("#current-player").empty();
     $("#current-player").append(currentPlayer.name);
   });
