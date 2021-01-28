@@ -7,36 +7,42 @@
   <script src="js/scripts.js"></script>
   <title>Pig Dice</title>
 </head>
+
+
 <body>
-  <div class="container">
-    <div class="row">
-      <h1>Pig Dice!</h1>
-    </div>
-    <div class="row">
-      <div class="col-6">
-        <p>P1</p>
-        <p>Score: <span id="p1-score"></span></p>
-      </div>
-      <div class="col-6">
-        <p>P2</p>
-        <p>Score: <span id="p2-score"></span></p>
-      </div>
-    </div>
-    <div class="row buttons">
-      <button type="button" id="roll">Roll</button>
-      <button type="button" id="hold">Hold</button>
-    </div>
+  <h1>Pig Dice!</h1>
+
+  
+  <div class="box">  
     <p>Current Player: <span id="current-player"></span></p>
-    <p>Current round score is: <span id="current-round-score"></span></p>
-    <p>Die roll: <div id="current-roll"></div></p>
-    <div class="Rules">
-      <h3>Rules</h3>
-      Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":<br>
-  * If the player rolls a 1, they score nothing and it becomes the next player's turn.<br>
-  * If the player rolls any other number, it is added to their turn total and the player's turn continues.<br>
-  * If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.<br><br>
-  The first player to score 100 or more points wins.
-    </div>  
+    <p>Current round score: <span id="current-round-score"></span></p>
   </div>
+  <div class="row">
+    <div class="box2">
+      <p>P1 Score</p>
+      <p><span id="p1-score"></span></p>
+    </div>
+    <div class="box3">
+      <p>P2 Score</p>
+      <p><span id="p2-score"></span></p>
+    </div>
+  </div>  
+
+
+
+
+  <div class="row-buttons box">
+    <button type="button" id="roll">Roll</button>
+    <button type="button" id="hold">Hold</button>
+    <p>Die roll: <div id="current-roll"></div></p>
+  </div>
+  <div class="rules">
+    <h2>Rules</h2>
+    Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":
+    <p>* If the player rolls a 1, they score nothing and it becomes the next player's turn.
+    <br>* If the player rolls any other number, it is added to their turn total and the player's turn continues. 
+    <br>* If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</p>
+    <p>The first player to score 100 or more points wins.</p>
+  </div>  
 </body>
 </html>
