@@ -5,4 +5,11 @@
 html, body {
   width: 100%;
   height: 100%;
+  background-color: rgb(255, 239, 234);
+  color: rgb(165, 80, 80);
+}
+
+button {
+  background-color: transparent;
+  border-radius: 10px;
 }
