@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap'); */
 
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
 * {
   box-sizing: border-box;
 }
@@ -9,7 +10,8 @@ html, body {
   height: 100%;
   background-color: rgb(255, 239, 234);
   color: rgb(189, 117, 117);
-  font-family: 'Bangers', cursive;
+  /* font-family: 'Bangers', cursive; */
+  font-family: 'Londrina Solid', cursive;
 }
 button {
   color:rgb(255, 219, 210);
@@ -41,6 +43,7 @@ button:active {
   border-radius: 10px;
   box-shadow: 2px 2px 0px 0px,
   4px 4px 2px 2px rgba(104, 104, 104, 0.247);
+  font-size: 25px;
 }
 .rules-button-styling:active {
   position: absolute;
@@ -67,8 +70,9 @@ h1 {
   border-style: groove ridge ridge groove;
   border-color:rgb(189, 117, 117);
   padding: 20px;
-  box-shadow: 15px 10px 10px 5px;
+  box-shadow: 15px 10px 10px 5px ;
   display:none;
+  font-size: 20px;
 }
 .box {
   margin: auto;
@@ -107,7 +111,6 @@ h1 {
 }
 .box5 {
   margin: auto;
-  margin-top: 15px;
   text-align: center;
   font-size: 30px;
   line-height: 40px;
@@ -128,16 +131,21 @@ h1 {
 #current-roll {
   font-size: 35px;
 }
-.pig-image-bottom {
+.creators {
   position: fixed;
-  bottom:75px;
-  right: 60px;
+  bottom:10px;
+  right: 40px;
   font-size: 20px;
-  width: 15%;
 }
 .pig-image-header-left {
   width: 100px;
   float: left;
   margin-left: 200px;
   margin-top: 20px;
+}
+a {
+  color:  rgb(223, 152, 152)
+}
+a:hover {
+  color:rgb(102, 58, 58);
 }
