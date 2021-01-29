@@ -1,6 +1,6 @@
 // Business Logic
 function Player(name) {
-  this.score = 0;
+  this.score = 90;
   this.name = name;
 }
 function randomNumber(max) {
@@ -37,10 +37,9 @@ $(document).ready(function() {
   $("button#roll").click(function() {
     let roll = (randomNumber(6) + 1);
     if ((currentPlayer.score + currentRoundScore + roll) >= 100) {
-      $("div#winner").empty();
-      $("div#winner").append("GAME OVER " + currentPlayer.name + " wins!");
       $("button#roll").hide();
       $("button#hold").hide();
+      $("div#winner").append("GAME OVER " + currentPlayer.name + " wins!");
     }
     if (roll === 1) {
       currentPlayer = turnEnd(currentPlayer);
