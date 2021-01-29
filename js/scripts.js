@@ -1,6 +1,6 @@
 // Business Logic
 function Player(name) {
-  this.score = 90;
+  this.score = 0;
   this.name = name;
 }
 function randomNumber(max) {
