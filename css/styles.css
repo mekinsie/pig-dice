@@ -107,20 +107,21 @@ h1 {
   position: fixed;
   top: 45%;
   left: 50%;
-  transform: translate(-50%, -67%);
+  transform: translate(-50%, -50%);
 }
 .box5 {
   margin: auto;
   text-align: center;
   font-size: 30px;
   line-height: 40px;
+  margin-bottom: 15px;
 }
 .box6 {
   margin: auto;
-  margin-top: 15px;
   text-align: center;
   font-size: 30px;
   line-height: 20px;
+  margin-top: 15px;
 }
 .row-buttons{
   margin: auto;
@@ -155,4 +156,19 @@ a:hover {
   text-align: center;
   font-size: 30px;
   line-height: 40px;
+}
+
+#die-roll {
+  margin-left: 45%;
+  text-align: center;
+  font-size: 30px;
+  line-height: 40px;
+  position: fixed;
+}
+.winnerbox {
+  margin: auto;
+  text-align: center;
+  font-size: 50px;
+  line-height: 20px;
+  padding-top: 130px;
 }
