@@ -25,8 +25,8 @@ function addToPlayerScore(player, currentRoundScore) {
 
 //User Interface Logic
 $(document).ready(function() { 
-  user1 = "p1";
-  user2 = "p2";
+  user1 = "P1";
+  user2 = "P2";
   player1 = new Player(user1);
   player2 = new Player(user2);
   let currentPlayer = player1;
