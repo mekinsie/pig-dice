@@ -31,22 +31,25 @@ The first player to score 100 or more points wins.
 
 #### This page has been tested with both the most recent versions of Mozilla Firefox and Google Chrome
 
+* _This project can be viewed directly on <a href="https://mekinsie.github.io/pig-dice/" target="_blank">github pages</a>._
+
+
 _Choose your preferred way to Install:_
 
 ### Using Git cloning (Most complete option):
 * Open Git or your preferred terminal
 * Navigate to your directory for Git projects (not within an existing project)
-* Type the following: git clone https://github.com/KirbyPaint/EC-W4-pig-dice
+* Type the following: git clone https://github.com/mekinsie/pig-dice
 
 ### Download the project as a ZIP folder:
-* Navigate to the project's page here: https://github.com/KirbyPaint/EC-W4-pig-dice
+* Navigate to the project's page here: https://github.com/mekinsie/pig-dice
 * Look for the green  ![code button](img/code.png?raw=true "code button")  button
 * Click the button and you will see a drop-down menu. Look for the "Download ZIP" button
 * Save your download locally and extract the files to a directory of your choice
 * Double-click the file named "index.html" to view the page
 
 ### View the project in your browser (Most convenient option):
-* Navigate to this link to view in your browser: https://kirbypaint.github.io/EC-W4-pig-dice/
+* Navigate to this link to view in your browser: https://github.com/mekinsie/pig-dice
 
 ## Known Bugs
 
